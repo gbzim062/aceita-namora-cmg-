@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Namora comigo</title>
+</head>
+
+<body>
+    <div id="conteudo">
+        <h2>Aceita namorar comigo?</h2>
+        <button class="btn" onclick="SIM()">SIM</button>
+        <button class="btn" onmouseover="desvia(this)">NÃO</button>
+    </div>
+</body>
+
+<style>
+
+    body {
+        background-color: #f58296;
+    }
+#conteudo {
+    
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 10px;
+    text-align: center;
+    font-family: sans-serif;
+}    
+.btn {
+    background: purple;
+    color: white;
+    border: none;
+    padding: 10px;
+    width: 80px;
+    border-radius: 5px;
+}
+
+img {
+    width: 200
+px;
+}
+
+</style>
+
+<script>
+    function SIM(){
+    alert("EU TE AMO")    
+}
+    function desvia(t){
+        var btn  = t;
+        btn.style.position= "absolute";
+        btn.style.bottom=geraPosiçao(10,90);
+        btn.style.left=geraPosiçao(10,90);
+        console.log("opa, desviei");
+    }
+
+    function geraPosiçao(min, max) {
+        return Math.random() * (max - min) + "%";
+    }
+</script>
+<p>
+    <div><center><img src="Captura de tela 2024-05-09 113414.png" alt="lindos"style="display: block;"></center></p></div>
+    
+</body>
+</html>
